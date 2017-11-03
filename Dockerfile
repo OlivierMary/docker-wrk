@@ -1,10 +1,5 @@
-FROM alpine:latest
-LABEL maintainer="Olivier MARY <olivier@rubike.tech>"
-
-# Environnement
-ENV WRK_BRANCH=4.0.2
-ENV WRK_URL=https://github.com/wg/wrk.git
-
+FROM alpine:3.6
+#LABEL maintainer="Olivier MARY <olivier@rubike.tech>"
 # Dependencies
 RUN apk add --no-cache  \
     git\
@@ -13,18 +8,12 @@ RUN apk add --no-cache  \
     libgcc\
     openssl\
     build-base\
-    linux-headers
-
-# Get src
-RUN git clone --branch $WRK_BRANCH $WRK_URL
-
-# Build & install
-RUN make -C ./wrk all
-RUN mv ./wrk/wrk /usr/bin
-
-# Clean image
-RUN rm -rf ./wrk
-RUN apk del \
+    linux-headers\
+    && git clone --branch 4.0.2 https://github.com/wg/wrk.git\
+    && make -C ./wrk all\
+    && mv ./wrk/wrk /usr/bin\
+    && rm -rf ./wrk\
+    && apk del \
     git\
     make\
     perl\
