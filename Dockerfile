@@ -1,5 +1,5 @@
 FROM alpine:3.6
-#LABEL maintainer="Olivier MARY <olivier@rubike.tech>"
+LABEL maintainer="Olivier MARY <olivier@rubike.tech>"
 # Dependencies
 RUN apk add --no-cache  \
     git\
