@@ -1,5 +1,8 @@
 FROM alpine:3.6
-LABEL maintainer="Olivier MARY <olivier@rubike.tech>"
+ARG VCS_REF
+LABEL   org.label-schema.vcs-ref=$VCS_REF \
+        org.label-schema.vcs-url="https://github.com/OlivierMary/docker-wrk"\
+        maintainer="Olivier MARY <olivier@rubike.tech>"
 # Dependencies
 RUN apk add --no-cache  \
     git\
