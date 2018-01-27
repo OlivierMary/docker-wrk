@@ -10,7 +10,8 @@ RUN apk add --no-cache  \
     build-base\
     linux-headers\
     && git clone --branch 4.1.0 https://github.com/wg/wrk.git\
-    && make -C ./wrk all\
+    && sed -i 's/no-idea/no-idea no-async/' ./wrk/Makefile\
+    && make -C  ./wrk all\
     && mv ./wrk/wrk /usr/bin\
     && rm -rf ./wrk\
     && apk del \
