@@ -3,9 +3,9 @@
 ```bash
 oliviermary/wrk:latest
 ```
-[![](https://images.microbadger.com/badges/version/oliviermary/wrk:4.0.2.svg)](https://microbadger.com/images/oliviermary/wrk:4.0.2 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/oliviermary/wrk:4.0.2.svg)](https://microbadger.com/images/oliviermary/wrk:4.0.2 "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/oliviermary/wrk:4.1.0.svg)](https://microbadger.com/images/oliviermary/wrk:4.1.0 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/oliviermary/wrk:4.1.0.svg)](https://microbadger.com/images/oliviermary/wrk:4.1.0 "Get your own image badge on microbadger.com")
 ```bash
-oliviermary/wrk:4.0.2
+oliviermary/wrk:4.1.0
 ```
 # docker-wrk
 

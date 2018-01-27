@@ -9,7 +9,7 @@ RUN apk add --no-cache  \
     openssl\
     build-base\
     linux-headers\
-    && git clone --branch 4.0.2 https://github.com/wg/wrk.git\
+    && git clone --branch 4.1.0 https://github.com/wg/wrk.git\
     && make -C ./wrk all\
     && mv ./wrk/wrk /usr/bin\
     && rm -rf ./wrk\
