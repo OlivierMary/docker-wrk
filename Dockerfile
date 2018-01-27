@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.7
 LABEL maintainer="Olivier MARY <olivier@rubike.tech>"
 # Dependencies
 RUN apk add --no-cache  \
